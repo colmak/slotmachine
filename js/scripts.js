@@ -101,4 +101,10 @@ $(document).ready(function () {
       $("#bet").html(parseInt($("#bet").html()) + 1);
     }
   });
+  $("#user").click(function () { 
+    $('#modalForm').modal('show');
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  });
 });
