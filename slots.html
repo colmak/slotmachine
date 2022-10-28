@@ -115,16 +115,17 @@
       <div class="modal fade" id="modalForm" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
+
               <!-- Login Form -->
-              <form action="">
+              <form id="#login-form"  name="login-form" action="">
                 <div class="modal-header">
-                  <h5 class="modal-title">Modal Login Form</h5>
+                  <h5 class="modal-title">Login</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <div class="mb-3">
                       <label for="Username">Username<span class="text-danger">*</span></label>
-                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
+                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username or Email">
                   </div>
       
                   <div class="mb-3">
@@ -146,7 +147,7 @@
                 </div>
                 </div>
                 <div class="modal-footer pt-4">                  
-                  <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                  <button type="submit" class="btn btn-success mx-auto w-100">Login</button>
                 </div>
                 <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
             </form>
@@ -155,7 +156,8 @@
       </div>
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/Auth/userAuth.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
