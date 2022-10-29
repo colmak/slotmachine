@@ -101,10 +101,22 @@ $(document).ready(function () {
       $("#bet").html(parseInt($("#bet").html()) + 1);
     }
   });
+  // Prompt user to login
+  $('#modalForm').modal('show');
+
   $("#user").click(function () { 
     $('#modalForm').modal('show');
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+  });
+  $("#signup").click(function () { 
+    console.log("text");
+    $('#modalForm').modal('hide');
+    $('#registerForm').modal('show');
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    
   });
 });
