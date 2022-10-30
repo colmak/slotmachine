@@ -1,4 +1,8 @@
 svg#user:hover { 
     filter:brightness(4.5) !important;
 }
-
+.profile{
+    border-radius: 50%;
+    width: 100%;
+    align-content: center;
+}
