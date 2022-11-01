@@ -4,5 +4,7 @@ svg#user:hover {
 .profile{
     border-radius: 50%;
     width: 100%;
-    align-content: center;
+}
+#no-border{
+    border: 0 !important;
 }

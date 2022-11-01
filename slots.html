@@ -22,31 +22,30 @@
   <body>
 
     <div class="container my-5 bg-light border rounded py-2 shadow">
-      <div class="row align-items-center p-1">
+      <div class="row align-items-center rounded p-3 m-2">
         
-        <div class="col text-center"></div> -
-    
+           <!-- Loogout button -->
+        <div  class="col m-2 d-flex justify-content-center">
+
+          <!-- user profile detail card on the right side of the Home Page -->
+          <div class="col">
+            <div id="no-border" class="card border-opacity-100 bg-light  mb-4">
+              <div class="card-body text-center">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                  class="rounded-circle img-fluid" style="width: 100px;">
+                <h5 class="my-3">John Doe</h5>
+                <p>Highscore:</p>
+              </div>
+            </div>
+
+        </div>
+        <div class="col m-2 d-flex justify-content-center">
           <div class="col text-center">
             <h1 class="display-3 text-primary">Slot Machine</h1>
             <p class="lead" id="win-p">Get 3 of a kind in a row to win!</p>
           </div> 
-
-         <!-- Loogout button -->
-        <div  class="col d-flex justify-content-center">
-
-          <!-- user profile detail card on the right side of the Home Page -->
-          <div class="col user-info">
-            <div class="card" style="width: 18.5em;">
-              <img id="profile-picture" class="profile" src="https://picsum.photos/640/360"
-                class="card-img-top" alt="user profile picture">
-              <div class="card-body">
-                <h5 id="username"class="text-center card-title">user name</h5>
-                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button onClick="loggout()" class="text-right btn btn-primary">signout</button>
-              </div>
-            </div>
-          </div>
-           
+        </div>
+        <div class="col m-2 d-flex justify-content-center">
           <!-- Login button -->
           <svg 
             xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +66,7 @@
           </svg>
         </div>
       </div>
-
+      
 
       <div class="row align-items-center rounded p-3 m-2">
         <div class="col m-2 d-flex justify-content-center">
