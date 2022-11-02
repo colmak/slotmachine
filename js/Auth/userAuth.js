@@ -5,17 +5,6 @@ Feaures : Signup user if new
           check Auth stated, isUser Login ? or not.
 */
 
-// #####################################    Firebase.
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDI5X8-CINcaMesGvasxVpcc7YtY6az5mk",
-//     authDomain: "slot-machine-e9fc8.firebaseapp.com",
-//     databaseURL: "https://slot-machine-e9fc8-default-rtdb.firebaseio.com",
-//     projectId: "slot-machine-e9fc8",
-//     storageBucket: "slot-machine-e9fc8.appspot.com",
-//     messagingSenderId: "885775908291",
-//     appId: "1:885775908291:web:afd4bd61619d14352e9176",
-//     measurementId: "G-6SRVQM8EP8"   
-// };
 firebase.initializeApp(firebaseConfig);             // Init firebase APP.
 const auth = firebase.auth();                       // Make Auth Reference.
         // Update firestore settings
