@@ -17,26 +17,27 @@
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
 
-    <div class="container my-5 bg-light border rounded py-2 shadow">
+    <div class="container my-5 bg-light border rounded px-2 shadow">
       <div class="row align-items-center rounded p-3 m-2">
         
            <!-- Loogout button -->
-        <div  class="col m-2 d-flex justify-content-center">
+        <div  class="col mx-2 d-flex justify-content-center">
 
           <!-- user profile detail card on the right side of the Home Page -->
           <div id ="user-info" class="col">
             <div id="no-border" class="card bg-light mb-4">
               <div class="card-body text-center">
                 <img id="profile-picture"src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
-                  class="rounded-circle img-fluid" style="width: 150px;">
+                  class="rounded-circle img-fluid" style="width: 100px;">
                 <h5 id="username"class="my-3">John Doe</h5>
                 <p>Highscore:</p>
+                <button onClick="loggout()"class="mx-auto btn btn-danger">Signout</button>
               </div>
-              <button onClick="loggout()"class="btn btn-danger">Signout</button>
             </div>
 
         </div>
@@ -69,7 +70,7 @@
       </div>
       
 
-      <div class="row align-items-center rounded p-3 m-2">
+      <div class="row align-items-center rounded px-3 mx-2">
         <div class="col m-2 d-flex justify-content-center">
           <img
             src="images/cherry.png"
@@ -141,7 +142,7 @@
               <form id="login-form"  name="login-form" action="" >
                 <div class="modal-header">
                   <h5 class="modal-title">Login</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn-close" id="closeL" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <div class="mb-3">

@@ -102,7 +102,9 @@ $(document).ready(function () {
     }
   });
   // Prompt user to login
-  $('#modalForm').modal('show');
+  if(Cookies.get('popup')!=='false') {
+    $('#modalForm').modal('show');
+  }
 
   $("#user").click(function () { 
     $('#modalForm').modal('show');
@@ -110,7 +112,11 @@ $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
   });
+  $("#closeL").click(function () { 
+    Cookies.set('popup','false');
+  });
   $("#signup").click(function () { 
+    Cookies.set('popup','false');
     console.log("text");
     $('#modalForm').modal('hide');
     $('#registerForm').modal('show');
